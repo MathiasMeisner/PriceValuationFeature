@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceValuationFeature", "PriceValuationFeature\PriceValuationFeature.csproj", "{84F7EC97-718E-4980-88E8-97D29557C540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceValuationFeatureTests", "PriceValuationFeatureTests\PriceValuationFeatureTests.csproj", "{09BCBD68-3897-4391-809D-4319AD248E2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{84F7EC97-718E-4980-88E8-97D29557C540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84F7EC97-718E-4980-88E8-97D29557C540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84F7EC97-718E-4980-88E8-97D29557C540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BCBD68-3897-4391-809D-4319AD248E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BCBD68-3897-4391-809D-4319AD248E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BCBD68-3897-4391-809D-4319AD248E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BCBD68-3897-4391-809D-4319AD248E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
