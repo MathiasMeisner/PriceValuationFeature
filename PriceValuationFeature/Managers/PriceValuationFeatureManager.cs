@@ -52,14 +52,14 @@ namespace PriceValuationFeature.Managers
             return homes.Find(home => home.Id == id);
         }
 
-        public int TotalHomesForSale()
+        public int TotalHomesForSaleInMunicipality(int municipalityId)
         {
-            return homes.Count(x => x.IsOpen);
+            return homes.Where(x => x.MunicipalityId == municipalityId).Count(x => x.IsOpen);
         }
 
-        public double AvgKvmPriceInMunicipality()
+        public double AvgKvmPriceInMunicipality(int municipalityId)
         {
-            double d = homes.Where(x => x.MunicipalityId == 1).Select(x => x.AvgKvmPrice()).Average();
+            double d = homes.Where(x => x.MunicipalityId == municipalityId).Select(x => x.AvgKvmPrice()).Average();
             double dc = Math.Round((double)d, 0);
             return dc;
         }

@@ -28,5 +28,6 @@ namespace PriceValuationFeature.Models
                 _name = value;
             }
         }
+
     }
 }

@@ -29,7 +29,7 @@ namespace PriceValuationFeatureTests
         [Fact]
         public void TotalHomesForSaleTest()
         {
-            Assert.Equal(3, _manager.TotalHomesForSale());
+            Assert.Equal(1, _manager.TotalHomesForSaleInMunicipality(1));
         }
 
         [Fact]
@@ -42,7 +42,7 @@ namespace PriceValuationFeatureTests
             double dc = Math.Round((double)d, 0);
 
             // ASSERT - takes the new variable and compares it to the method outcome
-            Assert.Equal(dc, _manager.AvgKvmPriceInMunicipality());
+            Assert.Equal(dc, _manager.AvgKvmPriceInMunicipality(1));
         }
 
         [Fact]

@@ -32,5 +32,18 @@ namespace PriceValuationFeature.Controllers
             if (home == null) return NotFound("No id: " + id);
             return home;
         }
+
+        [HttpGet("/municipality/totalHomesForSale/{municipalityId}")]
+        public int TotalHomesForSale(int municipalityId)
+        {
+            return _manager.TotalHomesForSaleInMunicipality(municipalityId);
+        }
+
+        [HttpGet("/municipality/avgKvmPrice/{municipalityId}")]
+        public double AvgKvmPriceInMunicipality(int municipalityId)
+        {
+            return _manager.AvgKvmPriceInMunicipality(municipalityId);
+        }
+
     }
 }
